@@ -25,9 +25,18 @@
                 <artifactId>maven-project-info-reports-plugin</artifactId>
                 <version>3.7.0</version>
             </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.1.0</version>
+                <configuration>
+                    <mainClass>edu.cmu.cs.cs214.lab02.Main</mainClass>
+                </configuration>
+            </plugin>
         </plugins>
         <pluginManagement>
             <!-- Upgrade default checkstyle version to allow for Java 14+ features. -->
+            
             <plugins>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -57,6 +66,7 @@
             </plugins>
         </pluginManagement>
     </build>
+
 
     <dependencies>
         <dependency>
