@@ -8,4 +8,4 @@ function circle(radius: number): Shape {
     }
 }
 
-export { Shape }
+export { Shape , circle }
